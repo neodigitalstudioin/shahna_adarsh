@@ -1,65 +1,64 @@
 /**
- * Neo Digital Studio - Master Wedding Data Architecture
- * Dynamic, fully customizable data model for luxury Indian digital wedding invitations.
+ * Master Wedding Data Architecture - Islamic Royal Theme
+ * Dynamic, fully customizable data model for luxury digital wedding invitations.
  */
 
 window.weddingDataDefault = {
   studio: {
-    name: "Arun & Reshma",
-    tagline: "Sacred Wedding Invitation",
+    name: "Shahna & Adarsh",
+    tagline: "Wedding Reception Invitation",
     year: "2026"
   },
 
   sacred: {
-    ganapathiEmblem: "assets/ganapathi.png",
+    ganapathiEmblem: "assets/Star Emblem.png",
     themeBackdrop: "assets/Theme.jpg",
-    mantra: "॥ श्री गणेशाय नमः ॥",
-    blessing: "Vakratunda Mahakaya Suryakoti Samaprabha • Nirvighnam Kuru Me Deva Sarvakaryeshu Sarvada"
+    mantra: "بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ",
+    blessing: "In the name of Allah, the Most Gracious, the Most Merciful."
   },
 
   invitation: {
-    eyebrow: "THE WEDDING CELEBRATION",
-    coupleDisplay: "Arun Raj GR & Reshma S",
-    groomName: "ARUN RAJ GR",
-    brideName: "RESHMA S",
-    date: "Saturday, October 31, 2026",
-    time: "11:48 AM · Muhurtham",
-    muhurthamTime: "11:48 AM – 12:12 PM",
-    sweekaranamTime: "10:45 AM",
-    receptionDate: "Friday, October 30, 2026",
-    receptionTime: "4:00 PM – 8:00 PM",
-    eventDateTimeISO: "2026-10-31T11:48:00+05:30",
+    eyebrow: "YOU ARE CORDIALLY INVITED TO THE",
+    coupleDisplay: "Shahna & Adarsh",
+    groomName: "ADARSH",
+    brideName: "SHAHNA",
+    date: "Thursday, November 12, 2026",
+    hijriDate: "1448 Rabi' al-Akhir 2",
+    time: "4:00 PM to 8:30 PM",
+    receptionDate: "Thursday, November 12, 2026",
+    receptionTime: "4:00 PM – 8:30 PM",
+    eventDateTimeISO: "2026-11-12T16:00:00+05:30",
     message: "Together with our families, we joyfully invite you to celebrate our union.",
-    verse: "Cordially invite your esteemed presence with family on the occasion of the marriage of our daughter",
-    subheading: "Reshma S (Ponnu) with Arun Raj GR",
+    verse: "Cordially invite your esteemed presence with family on the occasion of the wedding reception of our daughter",
+    subheading: "Shahna with Adarsh",
     musicUrl: "assets/wedding_song.mp3",
     hosts: {
-      inviters: "Mr. Sureshkumar. T & Mrs. Sandhya. K",
-      address: "Ashiyana, MLA Road, Aramada Jn., Thrikkannapuram P.O., Thiruvananthapuram",
-      phones: ["9746645145", "9633362643"]
+      inviters: "Hussain and Shaharban",
+      address: "Thiruvananthapuram, Kerala",
+      phones: ["+91 9895728351"]
     },
-    bestWishes: "With best wishes from : Meenu, Appu, Deva"
+    bestWishes: "With all our little love, Riyan & Minnu"
   },
 
   couple: {
     couplePhoto: "assets/couple.jpg",
     groom: {
-      name: "Arun Raj GR",
-      fullName: "Arun Raj GR",
-      relationTitle: "SON OF",
-      parents: "Mr. N. Raju & Mrs. Geetha Raju",
-      photo: "assets/groom.jpg",
-      familyCity: "Kailas, Ambujavilasam Road, Vanchiyoor P.O., Thiruvananthapuram"
+      name: "Adarsh",
+      fullName: "Adarsh",
+      relationTitle: "GROOM",
+      parents: "",
+      photo: "assets/couple.jpg",
+      familyCity: "Thiruvananthapuram, Kerala"
     },
     bride: {
-      name: "Reshma S",
-      nickname: "(Ponnu)",
-      fullName: "Reshma S (Ponnu)",
+      name: "Shahna",
+      nickname: "",
+      fullName: "Shahna",
       relationTitle: "DAUGHTER OF",
-      parents: "Mr. Sureshkumar. T & Mrs. Sandhya. K",
-      photo: "assets/bride.jpg",
-      familyCity: "Ashiyana, MLA Road, Aramada Jn., Thrikkannapuram P.O., Thiruvananthapuram",
-      phones: "Ph: 9746645145, 9633362643"
+      parents: "Hussain and Shaharban",
+      photo: "assets/couple.jpg",
+      familyCity: "Thiruvananthapuram, Kerala",
+      phones: "Phone: +91 9895728351"
     }
   },
 
@@ -67,54 +66,30 @@ window.weddingDataDefault = {
   eventsSection: {
     eyebrow: "WEDDING EVENTS",
     title: "CELEBRATION SCHEDULE",
-    subtitle: "“Every ritual, every moment — beautifully planned for family and friends.”",
+    subtitle: "“Every moment, every blessing — beautifully planned for family and friends.”",
     events: [
       {
         id: "evt-1",
-        category: "GALA RECEPTION",
+        category: "WEDDING RECEPTION",
         icon: "celebration",
         title: "Wedding Reception",
-        description: "An evening of warm blessings, heartfelt wishes, and dinner celebration with family and friends ahead of the sacred union.",
-        date: "Friday, October 30, 2026",
-        time: "From 4:00 PM to 8:00 PM",
-        venue: "Karthika Auditorium, Attukal, Thiruvananthapuram",
-        mapsUrl: "https://maps.google.com/?q=Karthika+Auditorium+Attukal+Thiruvananthapuram",
-        directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Karthika+Auditorium+Attukal+Thiruvananthapuram"
-      },
-      {
-        id: "evt-2",
-        category: "TRADITIONAL WELCOME",
-        icon: "om",
-        title: "Sweekaranam",
-        description: "Traditional auspicious welcome ceremony receiving the groom and family with blessings and prayer.",
-        date: "Saturday, October 31, 2026",
-        time: "10:45 AM",
-        venue: "Karthika Auditorium, Attukal, Thiruvananthapuram",
-        mapsUrl: "https://maps.google.com/?q=Karthika+Auditorium+Attukal+Thiruvananthapuram",
-        directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Karthika+Auditorium+Attukal+Thiruvananthapuram"
-      },
-      {
-        id: "evt-3",
-        category: "THE SACRED MUHURAT",
-        icon: "vivah",
-        title: "Wedding Ceremony (Muhurtham)",
-        description: "Sacred Thalikettu and traditional Vedic wedding rituals uniting Arun Raj & Reshma in auspicious holy matrimony.",
-        date: "Saturday, October 31, 2026",
-        time: "11:48 AM – 12:12 PM",
-        venue: "Karthika Auditorium, Attukal, Thiruvananthapuram",
-        mapsUrl: "https://maps.google.com/?q=Karthika+Auditorium+Attukal+Thiruvananthapuram",
-        directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Karthika+Auditorium+Attukal+Thiruvananthapuram"
+        description: "An evening of warm blessings, heartfelt congratulations, and dinner celebration with family and friends celebrating the union of Shahna & Adarsh.",
+        date: "Thursday, November 12, 2026",
+        time: "From 4:00 PM to 8:30 PM (1448 Rabi' al-Akhir 2)",
+        venue: "Sree Balakrishna Kalyana Mandapam, near Thirumala Junction, Thiruvananthapuram, Kerala",
+        mapsUrl: "https://maps.google.com/?q=Sree+Balakrishna+Kalyana+Mandapam+Thirumala+Thiruvananthapuram",
+        directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Sree+Balakrishna+Kalyana+Mandapam+Thirumala+Thiruvananthapuram"
       }
     ]
   },
 
   // 5. COUNTDOWN
   countdown: {
-    eyebrow: "SACRED MUHURAT",
+    eyebrow: "WEDDING RECEPTION",
     title: "COUNTDOWN TO THE BIG DAY",
-    subtitle: "“The auspicious moment is getting closer.”",
-    targetDateTimeISO: "2026-10-31T11:48:00+05:30",
-    completedMessage: "THE AUSPICIOUS DAY HAS ARRIVED"
+    subtitle: "“The blessed moment is getting closer.”",
+    targetDateTimeISO: "2026-11-12T16:00:00+05:30",
+    completedMessage: "THE BLESSED DAY HAS ARRIVED"
   },
 
   // 6. VENUE & TRAVEL
@@ -126,31 +101,20 @@ window.weddingDataDefault = {
       {
         id: "ven-1",
         eventName: "Wedding Reception",
-        date: "Friday, October 30, 2026",
-        time: "04:00 PM – 08:00 PM",
-        venueName: "Karthika Auditorium, Attukal",
-        address: "Attukal, Manacaud P.O., Thiruvananthapuram, Kerala 695009",
-        mapsUrl: "https://maps.google.com/?q=Karthika+Auditorium+Attukal+Thiruvananthapuram",
-        directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Karthika+Auditorium+Attukal+Thiruvananthapuram",
-        mapQuery: "Karthika+Auditorium+Attukal+Thiruvananthapuram"
-      },
-      {
-        id: "ven-2",
-        eventName: "Sweekaranam & Wedding Ceremony",
-        date: "Saturday, October 31, 2026",
-        time: "Sweekaranam: 10:45 AM · Muhurtham: 11:48 AM – 12:12 PM",
-        venueName: "Karthika Auditorium, Attukal",
-        address: "Attukal, Manacaud P.O., Thiruvananthapuram, Kerala 695009",
-        mapsUrl: "https://maps.google.com/?q=Karthika+Auditorium+Attukal+Thiruvananthapuram",
-        directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Karthika+Auditorium+Attukal+Thiruvananthapuram",
-        mapQuery: "Karthika+Auditorium+Attukal+Thiruvananthapuram"
+        date: "Thursday, November 12, 2026",
+        time: "04:00 PM – 08:30 PM (1448 Rabi' al-Akhir 2)",
+        venueName: "Sree Balakrishna Kalyana Mandapam",
+        address: "Near Thirumala Junction, Thiruvananthapuram, Kerala",
+        mapsUrl: "https://maps.google.com/?q=Sree+Balakrishna+Kalyana+Mandapam+Thirumala+Thiruvananthapuram",
+        directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Sree+Balakrishna+Kalyana+Mandapam+Thirumala+Thiruvananthapuram",
+        mapQuery: "Sree+Balakrishna+Kalyana+Mandapam+Thirumala+Thiruvananthapuram"
       }
     ],
     travelNotes: [
-      "Karthika Auditorium is conveniently located near the renowned Attukal Bhagavathy Temple in Thiruvananthapuram.",
-      "The venue is easily accessible from Thiruvananthapuram Central Railway Station (approx. 3.5 km) and Trivandrum International Airport (approx. 6 km).",
-      "Guests are cordially requested to arrive by 10:30 AM on Saturday, October 31st for the Sweekaranam ceremony.",
-      "Contact for assistance: Mr. Sureshkumar T (Ph: 9746645145, 9633362643) or Mr. N. Raju."
+      "Sree Balakrishna Kalyana Mandapam is conveniently located near Thirumala Junction in Thiruvananthapuram, Kerala.",
+      "The venue is easily accessible from Thiruvananthapuram Central Railway Station / KSRTC Bus Stand and Trivandrum International Airport.",
+      "Guests are cordially invited to join the reception from 4:00 PM to 8:30 PM on Thursday, November 12th, 2026.",
+      "Contact for assistance: +91 9895728351."
     ]
   },
 
@@ -163,7 +127,7 @@ window.weddingDataDefault = {
     streamUrl: "",
     buttonText: "JOIN LIVE STREAM",
     platform: "Live Broadcast",
-    broadcastTime: "October 31, 2026 · 11:30 AM IST"
+    broadcastTime: "November 12, 2026 · 4:00 PM IST"
   }
 };
 

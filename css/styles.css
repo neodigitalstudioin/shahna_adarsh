@@ -1,64 +1,59 @@
 /* ==========================================================================
-   ARUN RAJ GR & RESHMA S - SACRED HINDU WEDDING CELEBRATION
-   THEME: Traditional Temple Mandap Inspired by Theme.jpg
-   Palette: Warm Ivory Sandalwood (#FAF5EC, #F6EFE3, #FBF8F2)
-            Antique Temple Gold & Brass (#B8860B, #C8962E, #D4AF37, #8C6008)
-            Royal Lotus Pink & Deep Rose (#C8326A, #A11A4E, #E85D95, #7D1036)
-            Sacred Kumkum Maroon & Teak (#480C1B, #6E1022, #331D16, #24110B)
+   SHAHNA & ADARSH - ISLAMIC ROYAL WEDDING RECEPTION
+   THEME: Islamic Royal Theme with Theme.jpg Backdrop
+   Palette: Deep Emerald & Forest Green (#07261d, #051e17, #0b382b)
+            Royal Islamic Gold & Champagne (#D4AF37, #E5C158, #F5DC89, #FFD700)
+            Warm Ivory & Cream (#F9F4EA, #F2EDE4, #DCD4C5)
    ========================================================================== */
 
 :root {
-  /* Theme Image Palette: Ivory Sandalwood, Antique Brass & Temple Gold, Lotus Pink & Royal Kumkum */
-  --bg-sandalwood: #f8f4ed;
-  --bg-ivory: #fcf9f4;
-  --bg-cream: #faf5ec;
-  --bg-parchment: #f4ecdf;
+  /* Islamic Royal Emerald & Forest Green System */
+  --bg-emerald-dark: #07261d;
+  --bg-emerald-deep: #051e17;
+  --bg-emerald-rich: #0b382b;
+  --bg-sandalwood: #07261d;
+  --bg-ivory: #093025;
+  --bg-cream: #06241b;
+  --bg-parchment: #041a13;
 
-  /* Card Surfaces: Translucent Royal Sandalwood Parchment & Frosted Glass */
-  --surface-card: rgba(255, 253, 248, 0.94);
-  --surface-card-deep: rgba(250, 244, 234, 0.97);
-  --surface-card-border: rgba(197, 154, 39, 0.45);
-  --surface-card-shadow: 0 16px 45px rgba(65, 30, 15, 0.12), 0 0 24px rgba(212, 175, 55, 0.15);
+  /* Card Surfaces: Translucent Emerald Glass over Theme.jpg */
+  --surface-card: rgba(6, 34, 26, 0.52);
+  --surface-card-deep: rgba(4, 22, 17, 0.65);
+  --surface-card-border: rgba(212, 175, 55, 0.35);
+  --surface-card-shadow: 0 16px 45px rgba(0, 0, 0, 0.45), 0 0 24px rgba(212, 175, 55, 0.12);
 
-  /* Gold & Brass System (matching hanging vilakku & brass elephant) */
-  --gold-primary: #b8860b;
-  --gold-rich: #c8962e;
-  --gold-light: #dfb350;
-  --gold-bright: #d4af37;
-  --gold-deep: #8c6008;
-  --gold-dark: #664606;
-  --gold-border: rgba(184, 134, 11, 0.45);
-  --gold-border-subtle: rgba(184, 134, 11, 0.25);
-  --gold-glow: 0 0 24px rgba(212, 175, 55, 0.25);
-  --gold-glow-subtle: 0 0 14px rgba(212, 175, 55, 0.15);
-  --gold-glow-strong: 0 0 35px rgba(212, 175, 55, 0.4);
+  /* Gold System - Sophisticated Warm Metallic Gold (No Lemon Yellow) */
+  --gold-primary: #d4af37;
+  --gold-rich: #dfb350;
+  --gold-light: #e6ce92;
+  --gold-bright: #dfb350;
+  --gold-deep: #c59b27;
+  --gold-dark: #8c6008;
+  --gold-border: rgba(212, 175, 55, 0.4);
+  --gold-border-subtle: rgba(212, 175, 55, 0.22);
+  --gold-glow: 0 0 24px rgba(212, 175, 55, 0.28);
+  --gold-glow-subtle: 0 0 14px rgba(212, 175, 55, 0.16);
+  --gold-glow-strong: 0 0 35px rgba(212, 175, 55, 0.45);
 
-  /* Lotus Pink & Rose System (matching floating lotuses & buds in Theme.jpg) */
-  --lotus-pink: #c8326a;
-  --lotus-pink-deep: #a11a4e;
-  --lotus-pink-light: #e85d95;
-  --lotus-pink-soft: #fdebf2;
-  --lotus-pink-border: rgba(200, 50, 106, 0.35);
+  /* Accent mapping for consistent theme harmony */
+  --lotus-pink: #d4af37;
+  --lotus-pink-deep: #dfb350;
+  --lotus-pink-light: #e6ce92;
+  --lotus-pink-soft: rgba(212, 175, 55, 0.12);
+  --lotus-pink-border: rgba(212, 175, 55, 0.35);
 
-  /* Temple Red & Kumkum (Auspicious Accents) */
-  --kumkum-red: #6e1022;
-  --kumkum-deep: #480c1b;
-  --kumkum-soft: #8b1830;
+  --kumkum-red: #d4af37;
+  --kumkum-deep: #f5ecd8;
+  --kumkum-soft: #dfb350;
 
   /* Typography Colors */
-  --text-heading: #480c1b;
-  /* Royal Kumkum Maroon for regal contrast */
-  --text-primary: #331d16;
-  /* Deep carved teak/wood tone for crystal readability */
-  --text-secondary: #5c3f35;
-  /* Warm sandalwood earth */
-  --text-muted: #bb623e;
-  /* Soft muted teak */
-  --text-gold: #a68020;
-  /* Deep readable gold */
-  --text-lotus: #a11a4e;
-  /* Lotus pink text */
-  --text-on-dark: #8a764d;
+  --text-heading: #f9f4ea;
+  --text-primary: #f2ede4;
+  --text-secondary: #dcd4c5;
+  --text-muted: #b8ad98;
+  --text-gold: #dfb350;
+  --text-lotus: #d4af37;
+  --text-on-dark: #f5ecd8;
 
   /* Typography Fonts */
   --font-serif-heading: 'Cinzel', Georgia, serif;
@@ -66,7 +61,6 @@
   --font-classic: 'Marcellus', Georgia, serif;
   --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
   --font-numerals: 'Cinzel', 'Montserrat', Georgia, serif;
-  --font-devanagari: 'Noto Serif Devanagari', serif;
 
   /* Layout */
   --invitation-max-width: 580px;
@@ -85,7 +79,7 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: var(--bg-sandalwood);
+  background-color: #07261d;
   color: var(--text-primary);
   font-family: var(--font-serif-body);
   overflow-x: hidden;
@@ -94,7 +88,7 @@ html {
 body {
   position: relative;
   min-height: 100vh;
-  background-color: var(--bg-sandalwood);
+  background-color: #07261d;
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
@@ -221,24 +215,26 @@ body {
   gap: 8px;
   padding: 8px 16px;
   border-radius: 9999px;
-  background: rgba(255, 252, 245, 0.95);
-  border: 1px solid rgba(197, 154, 39, 0.45);
-  box-shadow: 0 4px 18px rgba(70, 30, 15, 0.12), inset 0 0 10px rgba(212, 175, 55, 0.1);
+  background: rgba(6, 34, 26, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.1);
 }
 
 .studio-pill .dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: var(--lotus-pink);
-  box-shadow: 0 0 8px var(--lotus-pink);
+  background: var(--gold-bright);
+  box-shadow: 0 0 8px var(--gold-bright);
 }
 
 .studio-pill-text {
   font-family: var(--font-serif-heading);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
-  color: var(--kumkum-deep);
+  color: var(--text-heading);
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -250,10 +246,12 @@ body {
   gap: 8px;
   padding: 8px 16px;
   border-radius: 9999px;
-  background: rgba(255, 252, 245, 0.95);
-  border: 1px solid rgba(197, 154, 39, 0.45);
-  box-shadow: 0 4px 18px rgba(70, 30, 15, 0.12), inset 0 0 10px rgba(212, 175, 55, 0.1);
-  color: var(--kumkum-deep);
+  background: rgba(6, 34, 26, 0.78);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(212, 175, 55, 0.1);
+  color: var(--gold-light);
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: var(--font-serif-heading);
@@ -381,10 +379,12 @@ body.invitation-opened .studio-pill {
   position: relative;
   width: 100%;
   max-width: 440px;
-  background: linear-gradient(165deg, rgba(255, 253, 249, 0.96) 0%, rgba(250, 244, 233, 0.98) 100%);
-  border: 1.5px solid rgba(197, 154, 39, 0.6);
+  background: linear-gradient(165deg, rgba(6, 34, 26, 0.58) 0%, rgba(3, 20, 15, 0.72) 100%);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
   border-radius: 16px;
-  box-shadow: 0 20px 50px rgba(65, 30, 15, 0.18), 0 0 35px rgba(212, 175, 55, 0.25);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 35px rgba(212, 175, 55, 0.18);
   padding: 34px 22px 28px;
   text-align: center;
   display: flex;
@@ -408,7 +408,7 @@ body.invitation-opened .studio-pill {
 .cover-card-inner-frame {
   position: absolute;
   inset: 6px;
-  border: 1px solid rgba(197, 154, 39, 0.35);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 12px;
   pointer-events: none;
 }
@@ -446,19 +446,20 @@ body.invitation-opened .studio-pill {
   transform: translateX(-50%);
   width: 1px;
   height: 28px;
-  background: linear-gradient(to bottom, rgba(184, 134, 11, 0.7), rgba(184, 134, 11, 0.1));
+  background: linear-gradient(to bottom, rgba(212, 175, 55, 0.7), rgba(212, 175, 55, 0.1));
 }
 
-/* Sacred Ganesha Emblem - Clean, Crisp & Pure (No dark blur or black halos) */
+/* Islamic Star Emblem - Prominent, High-Resolution, Balanced */
 .sacred-ganapathi-wrapper {
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-top: 4px;
-  margin-bottom: 8px;
-  width: 100px;
-  height: 100px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 132px;
+  height: 132px;
+  animation: fadeInSoft 0.8s ease 0.15s both;
 }
 
 .sacred-ganapathi-glow {
@@ -469,25 +470,26 @@ body.invitation-opened .studio-pill {
 
 .sacred-ganapathi-img {
   position: relative;
-  width: 90px;
+  width: auto;
+  max-width: 122px;
   height: auto;
-  max-height: 100px;
+  max-height: 122px;
   object-fit: contain;
-  filter: none !important;
-  -webkit-filter: none !important;
+  filter: drop-shadow(0 4px 18px rgba(212, 175, 55, 0.5));
   animation: divineGanapathiFloat 4.2s ease-in-out infinite;
   will-change: transform;
 }
 
 .sanskrit-shloka {
-  font-family: var(--font-devanagari);
-  font-size: clamp(1rem, 2.8vw, 1.15rem);
-  font-weight: 700;
-  letter-spacing: normal;
-  word-spacing: 0.16em;
-  color: var(--kumkum-red);
+  font-family: var(--font-serif-body);
+  font-size: clamp(0.95rem, 2.6vw, 1.1rem);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--gold-light);
   margin-bottom: 8px;
-  text-shadow: 0 0 8px rgba(212, 175, 55, 0.25);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  animation: fadeInSoft 0.85s ease 0.3s both;
 }
 
 .gold-diamond-divider {
@@ -496,12 +498,13 @@ body.invitation-opened .studio-pill {
   justify-content: center;
   width: 100%;
   margin: 6px 0;
+  animation: fadeInSoft 0.8s ease 0.38s both;
 }
 
 .diamond-dot {
   width: 8px;
   height: 8px;
-  background: linear-gradient(135deg, #dfb350, #b8860b);
+  background: linear-gradient(135deg, #dfb350, #d4af37);
   transform: rotate(45deg);
   box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
   display: inline-block;
@@ -509,12 +512,13 @@ body.invitation-opened .studio-pill {
 
 .eyebrow-text {
   font-family: var(--font-serif-heading);
-  font-size: 0.78rem;
-  letter-spacing: 0.26em;
-  color: var(--gold-deep);
+  font-size: 0.76rem;
+  letter-spacing: 0.22em;
+  color: var(--gold-light);
   text-transform: uppercase;
   font-weight: 700;
-  margin: 6px 0 12px;
+  margin: 6px 0 4px;
+  animation: fadeInSoft 0.85s ease 0.45s both;
 }
 
 .cover-couple-names-wrap {
@@ -532,8 +536,9 @@ body.invitation-opened .studio-pill {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-heading);
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8), 0 0 16px rgba(212, 175, 55, 0.25);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6), 0 0 16px rgba(212, 175, 55, 0.35);
   line-height: 1.22;
+  animation: fadeInUpSmooth 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.55s both;
 }
 
 .couple-name-part {
@@ -553,25 +558,26 @@ body.invitation-opened .studio-pill {
 .couple-ampersand-wrap .amp-line {
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(184, 134, 11, 0.65), transparent);
+  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.65), transparent);
 }
 
 .couple-ampersand-wrap .amp-char {
   font-family: var(--font-serif-body);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-style: italic;
   font-weight: 600;
-  color: var(--lotus-pink);
-  text-shadow: 0 0 8px rgba(200, 50, 106, 0.3);
+  color: var(--gold-bright);
+  text-shadow: 0 0 12px rgba(212, 175, 55, 0.45);
   line-height: 1;
   display: inline-block;
 }
 
 .cover-datetime-text {
   font-size: 1.05rem;
-  color: var(--gold-deep);
+  color: var(--gold-light);
   margin: 4px 0;
   font-weight: 700;
+  animation: fadeInSoft 0.85s ease 0.65s both;
 }
 
 .cover-invitation-quote {
@@ -583,6 +589,7 @@ body.invitation-opened .studio-pill {
   max-width: 340px;
   margin: 6px auto 20px;
   opacity: 0.95;
+  animation: fadeInSoft 0.9s ease 0.75s both;
 }
 
 /* OPEN INVITATION BUTTON */
@@ -596,15 +603,15 @@ body.invitation-opened .studio-pill {
   padding: 14px 28px;
   border-radius: 9999px;
   border: 1px solid rgba(255, 245, 215, 0.85);
-  background: linear-gradient(135deg, #dfb350 0%, #c8962e 45%, #a67417 80%, #8c5a08 100%);
-  color: #1a0308;
+  background: linear-gradient(135deg, #f5dc89 0%, #d4af37 45%, #b8860b 80%, #8c5a08 100%);
+  color: #062218;
   font-family: var(--font-serif-heading);
   font-size: 0.88rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 0 8px 25px rgba(80, 40, 10, 0.25), 0 0 24px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), 0 0 24px rgba(212, 175, 55, 0.35);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
@@ -635,14 +642,14 @@ body.invitation-opened .studio-pill {
 
 .btn-open-invitation:hover {
   transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 12px 30px rgba(80, 40, 10, 0.32), 0 0 35px rgba(212, 175, 55, 0.5);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45), 0 0 35px rgba(212, 175, 55, 0.5);
 }
 
 .star-seal-icon {
   display: inline-flex;
   width: 20px;
   height: 20px;
-  color: #1a0308;
+  color: #062218;
 }
 
 /* Cover Card Music Pill */
@@ -654,29 +661,29 @@ body.invitation-opened .studio-pill {
   margin-top: 14px;
   padding: 8px 18px;
   border-radius: 9999px;
-  border: 1px solid rgba(197, 154, 39, 0.45);
-  background: rgba(255, 252, 245, 0.94);
-  color: var(--kumkum-deep);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  background: rgba(6, 34, 26, 0.78);
+  color: var(--gold-light);
   font-family: var(--font-serif-heading);
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(70, 30, 15, 0.08);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .cover-music-pill:hover {
   transform: translateY(-2px);
   border-color: var(--gold-primary);
-  box-shadow: 0 6px 20px rgba(184, 134, 11, 0.25);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.3);
 }
 
 .cover-music-pill.playing {
   border-color: var(--gold-bright);
-  background: rgba(255, 248, 230, 0.98);
-  color: var(--lotus-pink-deep);
+  background: rgba(6, 40, 30, 0.9);
+  color: var(--gold-bright);
   box-shadow: 0 0 16px rgba(212, 175, 55, 0.35);
 }
 
@@ -752,18 +759,18 @@ body.invitation-opened .studio-pill {
   overflow: visible;
 }
 
-/* 1. Ganesha with Soft Glow & Entrance */
+/* 1. Islamic Star Emblem with Soft Glow & Entrance */
 .hero-ganapathi-wrapper {
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: clamp(100px, 24vw, 120px);
-  height: clamp(100px, 24vw, 120px);
-  margin-bottom: 2px;
+  width: clamp(120px, 28vw, 142px);
+  height: clamp(120px, 28vw, 142px);
+  margin-bottom: 4px;
   opacity: 0;
-  transform: scale(0.88);
-  transition: opacity 0.55s cubic-bezier(0.16, 1, 0.3, 1), transform 0.55s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: scale(0.9);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .revealed .hero-ganapathi-wrapper {
@@ -775,24 +782,22 @@ body.invitation-opened .studio-pill {
   position: relative;
   width: 100%;
   height: auto;
-  max-height: 110px;
+  max-height: 132px;
   object-fit: contain;
-  filter: none !important;
-  -webkit-filter: none !important;
+  filter: drop-shadow(0 4px 18px rgba(212, 175, 55, 0.45));
   animation: divineGanapathiFloat 4.2s ease-in-out infinite;
   will-change: transform;
 }
 
-/* 2. Sanskrit Blessing */
+/* /* 2. Opening Blessing */
 .hero-shloka {
-  font-family: var(--font-devanagari);
-  font-size: clamp(0.98rem, 2.7vw, 1.12rem);
-  font-weight: 700;
-  letter-spacing: normal;
-  word-spacing: 0.16em;
-  color: var(--kumkum-red);
+  font-family: var(--font-arabic), var(--font-classic), var(--font-serif-heading);
+  font-size: clamp(0.98rem, 2.7vw, 1.15rem);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--gold-primary);
   margin-bottom: 6px;
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
   opacity: 0;
   transform: translateY(6px);
   transition: opacity 0.45s ease 0.15s, transform 0.45s ease 0.15s;
@@ -855,9 +860,27 @@ body.invitation-opened .studio-pill {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-heading);
-  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8), 0 0 16px rgba(212, 175, 55, 0.25);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8), 0 0 16px rgba(212, 175, 55, 0.35);
   margin: 2px 0;
   line-height: 1.22;
+  position: relative;
+  transition: transform 0.4s ease, text-shadow 0.4s ease;
+}
+
+/* Continuous breathing golden glow on Bride and Groom names */
+.revealed .hero-groom-name,
+.revealed .hero-bride-name {
+  animation: nameGoldGlow 4.8s ease-in-out infinite alternate;
+}
+
+/* Sequential golden light wave ripple across each letter of Bride & Groom names */
+.revealed .hero-groom-name .anim-letter,
+.revealed .hero-bride-name .anim-letter {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  filter: blur(0);
+  animation: letterGleam 4.6s ease-in-out infinite;
+  animation-delay: calc(var(--letter-delay, 0s) + 1.2s);
 }
 
 .hero-ampersand-wrap {
@@ -873,7 +896,7 @@ body.invitation-opened .studio-pill {
 .hero-ampersand-wrap .amp-line {
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(184, 134, 11, 0.65), transparent);
+  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.65), transparent);
 }
 
 .hero-ampersand-wrap .amp-char {
@@ -881,10 +904,14 @@ body.invitation-opened .studio-pill {
   font-size: 1.65rem;
   font-style: italic;
   font-weight: 600;
-  color: var(--lotus-pink);
-  text-shadow: 0 0 10px rgba(200, 50, 106, 0.35);
+  color: var(--gold-bright);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
   line-height: 1;
   display: inline-block;
+}
+
+.revealed .hero-ampersand-wrap .amp-char {
+  animation: ampHeartbeat 3.2s ease-in-out infinite;
 }
 
 /* 8 & 9. Marriage Date & Marriage Time */
@@ -905,7 +932,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: clamp(0.86rem, 2.6vw, 1.05rem);
   letter-spacing: 0.18em;
-  color: var(--kumkum-deep);
+  color: var(--gold-bright);
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 3px;
@@ -915,9 +942,9 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: clamp(0.95rem, 2.8vw, 1.15rem);
   letter-spacing: 0.14em;
-  color: var(--gold-deep);
+  color: #ffffff;
   font-weight: 700;
-  text-shadow: 0 0 8px rgba(212, 175, 55, 0.25);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6), 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 /* 10. Invitation Quote / Message */
@@ -957,7 +984,7 @@ body.invitation-opened .studio-pill {
 }
 
 /* ==========================================================================
-   SECTION 2: COMPACT WEDDING DATE BOX (MUHURTHAM / SWEEKARANAM / RECEPTION)
+   SECTION 2: COMPACT WEDDING DATE BOX (RECEPTION / HIJRI DATE)
    ========================================================================== */
 .wedding-date-box-section {
   width: 100%;
@@ -970,13 +997,13 @@ body.invitation-opened .studio-pill {
   width: 100%;
   max-width: 580px;
   margin: 0 auto;
-  background: linear-gradient(165deg, rgba(255, 253, 248, 0.82) 0%, rgba(250, 243, 233, 0.86) 100%);
+  background: rgba(6, 34, 26, 0.55);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid rgba(197, 154, 39, 0.45);
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
   border-radius: 16px;
   padding: 24px 20px 22px;
-  box-shadow: 0 14px 38px rgba(65, 30, 15, 0.12), 0 0 20px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.4), 0 0 20px rgba(212, 175, 55, 0.15);
   transform: scale(0.97);
   opacity: 0;
   transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.8s ease;
@@ -985,7 +1012,7 @@ body.invitation-opened .studio-pill {
 .wedding-date-box-section.revealed .wedding-date-compact-box {
   opacity: 1;
   transform: scale(1);
-  border-color: rgba(184, 134, 11, 0.55);
+  border-color: rgba(212, 175, 55, 0.65);
 }
 
 .date-box-top-row {
@@ -1005,7 +1032,7 @@ body.invitation-opened .studio-pill {
 
 .date-box-vert-divider {
   width: 1px;
-  background: linear-gradient(to bottom, transparent, rgba(184, 134, 11, 0.45) 20%, rgba(184, 134, 11, 0.45) 80%, transparent);
+  background: linear-gradient(to bottom, transparent, rgba(212, 175, 55, 0.45) 20%, rgba(212, 175, 55, 0.45) 80%, transparent);
   margin: 0 10px;
 }
 
@@ -1021,7 +1048,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: clamp(0.7rem, 1.9vw, 0.8rem);
   letter-spacing: 0.2em;
-  color: var(--lotus-pink-deep);
+  color: var(--gold-deep);
   font-weight: 700;
   text-transform: uppercase;
   opacity: 0;
@@ -1034,7 +1061,7 @@ body.invitation-opened .studio-pill {
   font-style: normal;
   font-size: clamp(1.02rem, 2.9vw, 1.22rem);
   font-weight: 700;
-  color: var(--kumkum-deep);
+  color: var(--gold-bright);
   letter-spacing: 0.02em;
   line-height: 1.25;
   margin: 5px 0 2px;
@@ -1109,14 +1136,14 @@ body.invitation-opened .studio-pill {
 .story-person-block {
   width: 100%;
   max-width: 580px;
-  background: linear-gradient(160deg, rgba(255, 253, 249, 0.82) 0%, rgba(250, 244, 235, 0.86) 100%);
+  background: rgba(6, 34, 26, 0.55);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid var(--surface-card-border);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
   border-radius: 16px;
   padding: 32px 22px 28px;
   text-align: center;
-  box-shadow: 0 14px 40px rgba(65, 30, 15, 0.12), 0 0 20px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4), 0 0 20px rgba(212, 175, 55, 0.15);
   position: relative;
   overflow: hidden;
 }
@@ -1125,24 +1152,24 @@ body.invitation-opened .studio-pill {
   max-width: 580px;
 }
 
-/* Clean Luxury Rectangular Frame for Couple Photo - Landscape Rectangle */
+/* Clean Luxury Rectangular Frame for Couple Photo - Simple Rectangle Only */
 .story-photo-frame.couple-photo-frame {
   position: relative;
-  width: clamp(280px, 85vw, 460px);
+  width: clamp(260px, 80vw, 360px);
   max-width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 3 / 4;
   height: auto;
   margin: 16px auto 20px;
   border-radius: 6px;
   overflow: hidden;
-  border: 2.5px solid var(--gold-primary);
-  box-shadow: 0 14px 40px rgba(65, 30, 15, 0.18), 0 0 24px rgba(212, 175, 55, 0.25);
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4), 0 0 24px rgba(212, 175, 55, 0.25);
   transition: transform 0.5s ease, box-shadow 0.5s ease, border-color 0.5s ease;
 }
 
 .story-photo-frame.couple-photo-frame:hover {
   transform: scale(1.02);
-  box-shadow: 0 18px 48px rgba(65, 30, 15, 0.25), 0 0 35px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5), 0 0 35px rgba(212, 175, 55, 0.4);
 }
 
 .couple-lineage-grid {
@@ -1167,7 +1194,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: 0.68rem;
   letter-spacing: 0.18em;
-  color: var(--lotus-pink-deep);
+  color: var(--gold-deep);
   font-weight: 700;
   margin-bottom: 4px;
 }
@@ -1182,13 +1209,13 @@ body.invitation-opened .studio-pill {
 
 .lineage-person-name .nickname {
   font-size: 0.85em;
-  color: var(--lotus-pink);
+  color: var(--gold-bright);
   font-style: italic;
 }
 
 .lineage-vert-divider {
   width: 1px;
-  background: linear-gradient(to bottom, transparent, rgba(184, 134, 11, 0.45) 20%, rgba(184, 134, 11, 0.45) 80%, transparent);
+  background: linear-gradient(to bottom, transparent, rgba(212, 175, 55, 0.45) 20%, rgba(212, 175, 55, 0.45) 80%, transparent);
   margin: 0 4px;
 }
 
@@ -1202,7 +1229,7 @@ body.invitation-opened .studio-pill {
     width: 70%;
     height: 1px;
     margin: 6px auto;
-    background: linear-gradient(to right, transparent, rgba(184, 134, 11, 0.45) 20%, rgba(184, 134, 11, 0.45) 80%, transparent);
+    background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.45) 20%, rgba(212, 175, 55, 0.45) 80%, transparent);
   }
 }
 
@@ -1218,7 +1245,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: 0.7rem;
   letter-spacing: 0.22em;
-  color: var(--lotus-pink-deep);
+  color: var(--gold-deep);
   font-weight: 700;
   margin-bottom: 4px;
 }
@@ -1239,7 +1266,7 @@ body.invitation-opened .studio-pill {
   font-size: 1.05rem;
   font-style: italic;
   font-weight: 600;
-  color: var(--lotus-pink);
+  color: var(--gold-bright);
   margin-bottom: 4px;
 }
 
@@ -1255,7 +1282,7 @@ body.invitation-opened .studio-pill {
 .gold-mini-divider .mini-line {
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(184, 134, 11, 0.5), transparent);
+  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.5), transparent);
 }
 
 .gold-mini-divider .mini-knot {
@@ -1276,7 +1303,7 @@ body.invitation-opened .studio-pill {
 .story-parents-names {
   font-family: var(--font-serif-heading);
   font-size: 0.95rem;
-  color: var(--kumkum-deep);
+  color: var(--gold-primary);
   letter-spacing: 0.04em;
   font-weight: 600;
   margin-bottom: 3px;
@@ -1293,7 +1320,7 @@ body.invitation-opened .studio-pill {
 .story-contact-phone {
   margin-top: 8px;
   font-size: 0.88rem;
-  color: var(--gold-deep);
+  color: var(--gold-bright);
 }
 
 .story-contact-phone a {
@@ -1311,14 +1338,14 @@ body.invitation-opened .studio-pill {
 
 .ceremonial-card-plaque {
   position: relative;
-  background: linear-gradient(160deg, rgba(255, 253, 248, 0.82) 0%, rgba(250, 243, 233, 0.86) 100%);
+  background: rgba(6, 34, 26, 0.55);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1.5px solid var(--surface-card-border);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
   border-radius: 16px;
   padding: 34px 22px;
   text-align: center;
-  box-shadow: 0 16px 45px rgba(65, 30, 15, 0.12), 0 0 25px rgba(212, 175, 55, 0.15);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.4), 0 0 25px rgba(212, 175, 55, 0.15);
 }
 
 .card-ornament {
@@ -1356,7 +1383,7 @@ body.invitation-opened .studio-pill {
 .plaque-inviters-name {
   font-family: var(--font-serif-heading);
   font-size: 1.05rem;
-  color: var(--kumkum-deep);
+  color: var(--gold-primary);
   letter-spacing: 0.06em;
   font-weight: 700;
   margin-bottom: 4px;
@@ -1372,7 +1399,7 @@ body.invitation-opened .studio-pill {
 
 .plaque-inviters-phone {
   font-size: 0.88rem;
-  color: var(--gold-deep);
+  color: var(--gold-bright);
   letter-spacing: 0.05em;
   margin-bottom: 12px;
 }
@@ -1395,7 +1422,7 @@ body.invitation-opened .studio-pill {
 .gold-divider-line .line {
   flex: 1;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(184, 134, 11, 0.6), transparent);
+  background: linear-gradient(to right, transparent, rgba(212, 175, 55, 0.6), transparent);
 }
 
 .gold-divider-line .knot {
@@ -1433,7 +1460,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-body);
   font-style: italic;
   font-weight: 600;
-  color: var(--lotus-pink);
+  color: var(--gold-bright);
 }
 
 .plaque-with-text {
@@ -1441,7 +1468,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: 0.78rem;
   letter-spacing: 0.28em;
-  color: var(--lotus-pink-deep);
+  color: var(--gold-deep);
   font-weight: 700;
   margin: 4px 0;
 }
@@ -1449,7 +1476,7 @@ body.invitation-opened .studio-pill {
 .plaque-groom-parents {
   font-family: var(--font-serif-heading);
   font-size: 0.94rem;
-  color: var(--kumkum-deep);
+  color: var(--gold-primary);
   letter-spacing: 0.04em;
   font-weight: 600;
   margin-top: 8px;
@@ -1470,8 +1497,8 @@ body.invitation-opened .studio-pill {
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
-  background: rgba(248, 238, 222, 0.85);
-  border: 1px solid rgba(197, 154, 39, 0.35);
+  background: rgba(4, 24, 18, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: 12px;
   padding: 14px 10px;
   margin: 16px 0 14px;
@@ -1488,7 +1515,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: 0.65rem;
   letter-spacing: 0.16em;
-  color: var(--lotus-pink-deep);
+  color: var(--gold-deep);
   font-weight: 700;
   margin-bottom: 2px;
 }
@@ -1497,7 +1524,7 @@ body.invitation-opened .studio-pill {
   display: block;
   font-family: var(--font-numerals);
   font-size: 0.98rem;
-  color: var(--kumkum-deep);
+  color: var(--gold-primary);
   font-weight: 700;
   margin-bottom: 2px;
 }
@@ -1511,7 +1538,7 @@ body.invitation-opened .studio-pill {
 .timing-divider {
   width: 1px;
   height: 38px;
-  background: rgba(184, 134, 11, 0.3);
+  background: rgba(212, 175, 55, 0.3);
 }
 
 .plaque-venue-line {
@@ -1521,25 +1548,25 @@ body.invitation-opened .studio-pill {
 }
 
 .plaque-venue-line strong {
-  color: var(--kumkum-deep);
+  color: var(--gold-bright);
 }
 
 /* ==========================================================================
-   SECTION 5: SACRED COUNTDOWN TO MUHURTHAM
+   SECTION 5: SACRED COUNTDOWN TO CELEBRATION
    ========================================================================== */
 .countdown-section {
   width: 100%;
 }
 
 .countdown-card {
-  background: linear-gradient(160deg, rgba(255, 253, 248, 0.82) 0%, rgba(250, 244, 235, 0.86) 100%);
+  background: rgba(6, 34, 26, 0.55);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--surface-card-border);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
   border-radius: 16px;
   padding: 30px 20px;
   text-align: center;
-  box-shadow: 0 14px 40px rgba(65, 30, 15, 0.1);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
 }
 
 .section-title-wrap {
@@ -1551,7 +1578,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: 0.74rem;
   letter-spacing: 0.22em;
-  color: var(--lotus-pink-deep);
+  color: var(--gold-deep);
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 4px;
@@ -1582,22 +1609,22 @@ body.invitation-opened .studio-pill {
 }
 
 .countdown-unit-box {
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(197, 154, 39, 0.4);
+  background: rgba(4, 24, 18, 0.65);
+  border: 1px solid rgba(212, 175, 55, 0.4);
   border-radius: 10px;
   padding: 12px 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 14px rgba(65, 30, 15, 0.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
 }
 
 .count-value {
   font-size: clamp(1.5rem, 4vw, 1.95rem);
   font-weight: 800;
-  color: var(--kumkum-deep);
+  color: var(--gold-primary);
   line-height: 1;
-  text-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
 }
 
 .count-label {
@@ -1613,7 +1640,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: 1.1rem;
   letter-spacing: 0.14em;
-  color: var(--kumkum-deep);
+  color: var(--gold-bright);
   padding: 14px;
   border-radius: 8px;
   background: rgba(212, 175, 55, 0.15);
@@ -1629,14 +1656,14 @@ body.invitation-opened .studio-pill {
 }
 
 .venue-main-card {
-  background: linear-gradient(160deg, rgba(255, 253, 248, 0.82) 0%, rgba(250, 244, 235, 0.86) 100%);
+  background: rgba(6, 34, 26, 0.55);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--surface-card-border);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
   border-radius: 16px;
   padding: 30px 22px;
   text-align: center;
-  box-shadow: 0 16px 45px rgba(65, 30, 15, 0.1);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.4);
 }
 
 .venue-icon-header {
@@ -1649,14 +1676,14 @@ body.invitation-opened .studio-pill {
 .venue-map-icon {
   width: 22px;
   height: 22px;
-  stroke: var(--lotus-pink-deep);
+  stroke: var(--gold-primary);
 }
 
 .venue-badge {
   font-family: var(--font-serif-heading);
   font-size: 0.7rem;
   letter-spacing: 0.18em;
-  color: var(--lotus-pink-deep);
+  color: var(--gold-deep);
   font-weight: 700;
 }
 
@@ -1701,15 +1728,15 @@ body.invitation-opened .studio-pill {
 
 .btn-venue-action.primary {
   background: linear-gradient(135deg, #dfb350 0%, #c8962e 60%, #a67417 100%);
-  color: #1a0308;
+  color: #07261d;
   border: 1px solid rgba(255, 245, 215, 0.85);
   box-shadow: 0 4px 16px rgba(184, 134, 11, 0.3);
 }
 
 .btn-venue-action.secondary {
-  background: rgba(255, 255, 255, 0.92);
-  color: var(--kumkum-deep);
-  border: 1px solid var(--surface-card-border);
+  background: rgba(4, 24, 18, 0.65);
+  color: var(--gold-bright);
+  border: 1px solid rgba(212, 175, 55, 0.4);
 }
 
 .btn-venue-action:hover {
@@ -1721,8 +1748,8 @@ body.invitation-opened .studio-pill {
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(197, 154, 39, 0.35);
-  box-shadow: 0 8px 24px rgba(65, 30, 15, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   margin-bottom: 22px;
 }
 
@@ -1732,8 +1759,8 @@ body.invitation-opened .studio-pill {
 
 .venue-travel-notes {
   text-align: left;
-  background: rgba(248, 238, 222, 0.85);
-  border: 1px solid rgba(197, 154, 39, 0.3);
+  background: rgba(4, 24, 18, 0.6);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 12px;
   padding: 18px 18px;
 }
@@ -1745,7 +1772,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: 0.84rem;
   letter-spacing: 0.14em;
-  color: var(--kumkum-deep);
+  color: var(--gold-bright);
   font-weight: 700;
   margin-bottom: 12px;
 }
@@ -1775,7 +1802,7 @@ body.invitation-opened .studio-pill {
 }
 
 .travel-notes-list li strong {
-  color: var(--kumkum-deep);
+  color: var(--gold-bright);
 }
 
 /* ==========================================================================
@@ -1786,14 +1813,14 @@ body.invitation-opened .studio-pill {
 }
 
 .wishes-card {
-  background: linear-gradient(160deg, rgba(255, 253, 248, 0.82) 0%, rgba(250, 244, 235, 0.86) 100%);
+  background: rgba(6, 34, 26, 0.55);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--surface-card-border);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
   border-radius: 16px;
   padding: 30px 20px;
   text-align: center;
-  box-shadow: 0 14px 40px rgba(65, 30, 15, 0.1);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
 }
 
 .wishes-title {
@@ -1812,12 +1839,12 @@ body.invitation-opened .studio-pill {
   letter-spacing: 0.12em;
   font-weight: 700;
   margin: 12px 0 6px;
-  text-shadow: 0 0 14px rgba(212, 175, 55, 0.2);
+  text-shadow: 0 0 14px rgba(212, 175, 55, 0.3);
 }
 
 .wishes-subtitle {
   font-size: 0.95rem;
-  color: var(--lotus-pink-deep);
+  color: var(--gold-bright);
   font-weight: 600;
 }
 
@@ -1826,12 +1853,14 @@ body.invitation-opened .studio-pill {
 }
 
 .rsvp-card {
-  background: linear-gradient(160deg, rgba(255, 253, 248, 0.95) 0%, rgba(250, 244, 235, 0.98) 100%);
-  border: 1px solid var(--surface-card-border);
+  background: rgba(6, 34, 26, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(212, 175, 55, 0.35);
   border-radius: 16px;
   padding: 32px 22px;
   text-align: center;
-  box-shadow: 0 16px 45px rgba(65, 30, 15, 0.1);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.4);
 }
 
 .rsvp-desc {
@@ -1853,8 +1882,8 @@ body.invitation-opened .studio-pill {
   max-width: 175px;
   padding: 10px 14px;
   border-radius: 9999px;
-  border: 1px solid rgba(197, 154, 39, 0.35);
-  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  background: rgba(4, 24, 18, 0.65);
   color: var(--text-secondary);
   font-family: var(--font-serif-heading);
   font-size: 0.76rem;
@@ -1865,10 +1894,10 @@ body.invitation-opened .studio-pill {
 }
 
 .btn-rsvp-toggle.active {
-  background: rgba(200, 50, 106, 0.12);
-  border-color: var(--lotus-pink);
-  color: var(--lotus-pink-deep);
-  box-shadow: 0 0 14px rgba(200, 50, 106, 0.25);
+  background: rgba(212, 175, 55, 0.22);
+  border-color: var(--gold-primary);
+  color: var(--gold-bright);
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.35);
 }
 
 .rsvp-form {
@@ -1888,7 +1917,7 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: 0.7rem;
   letter-spacing: 0.14em;
-  color: var(--kumkum-deep);
+  color: var(--gold-primary);
   font-weight: 700;
 }
 
@@ -1897,8 +1926,8 @@ body.invitation-opened .studio-pill {
   width: 100%;
   padding: 12px 14px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(197, 154, 39, 0.4);
+  background: rgba(4, 24, 18, 0.65);
+  border: 1px solid rgba(212, 175, 55, 0.4);
   color: var(--text-primary);
   font-family: var(--font-serif-body);
   font-size: 1.05rem;
@@ -1909,7 +1938,7 @@ body.invitation-opened .studio-pill {
 .rsvp-textarea:focus {
   outline: none;
   border-color: var(--gold-bright);
-  box-shadow: 0 0 14px rgba(212, 175, 55, 0.35);
+  box-shadow: 0 0 14px rgba(212, 175, 55, 0.45);
 }
 
 .btn-rsvp-submit {
@@ -1920,7 +1949,7 @@ body.invitation-opened .studio-pill {
   padding: 13px 24px;
   border-radius: 9999px;
   background: linear-gradient(135deg, #dfb350 0%, #c8962e 60%, #a67417 100%);
-  color: #1a0308;
+  color: #07261d;
   border: 1px solid rgba(255, 245, 215, 0.85);
   font-family: var(--font-serif-heading);
   font-size: 0.84rem;
@@ -1941,7 +1970,7 @@ body.invitation-opened .studio-pill {
 .rsvp-success-banner {
   padding: 20px 16px;
   border-radius: 10px;
-  background: rgba(212, 175, 55, 0.12);
+  background: rgba(212, 175, 55, 0.15);
   border: 1px solid var(--gold-border);
   text-align: center;
 }
@@ -1949,7 +1978,7 @@ body.invitation-opened .studio-pill {
 .rsvp-success-banner h4 {
   font-family: var(--font-serif-heading);
   font-size: 1.1rem;
-  color: var(--kumkum-deep);
+  color: var(--gold-bright);
   font-weight: 700;
   margin-bottom: 6px;
 }
@@ -1976,9 +2005,9 @@ body.invitation-opened .studio-pill {
   gap: 8px;
   padding: 11px 18px;
   border-radius: 9999px;
-  background: rgba(255, 255, 255, 0.92);
-  border: 1px solid var(--surface-card-border);
-  color: var(--kumkum-deep);
+  background: rgba(4, 24, 18, 0.65);
+  border: 1px solid rgba(212, 175, 55, 0.35);
+  color: var(--gold-bright);
   font-family: var(--font-serif-heading);
   font-size: 0.74rem;
   letter-spacing: 0.1em;
@@ -1997,7 +2026,7 @@ body.invitation-opened .studio-pill {
 .btn-share-social:hover {
   transform: translateY(-2px);
   border-color: var(--gold-bright);
-  box-shadow: 0 4px 16px rgba(184, 134, 11, 0.25);
+  box-shadow: 0 4px 16px rgba(184, 134, 11, 0.35);
 }
 
 .btn-share-social.whatsapp:hover {
@@ -2007,7 +2036,7 @@ body.invitation-opened .studio-pill {
 .final-closing-section {
   text-align: center;
   padding: 40px 18px 60px;
-  border-top: 1px solid rgba(184, 134, 11, 0.25);
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
 }
 
 .closing-ganapathi-wrap {
@@ -2017,10 +2046,11 @@ body.invitation-opened .studio-pill {
 }
 
 .closing-ganapathi-img {
-  width: 85px;
+  width: 98px;
   height: auto;
-  filter: none !important;
-  -webkit-filter: none !important;
+  max-height: 98px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 16px rgba(212, 175, 55, 0.45));
   animation: divineGanapathiFloat 4.2s ease-in-out infinite;
   will-change: transform;
 }
@@ -2028,7 +2058,7 @@ body.invitation-opened .studio-pill {
 .closing-mantra {
   font-family: var(--font-classic), var(--font-serif-body);
   font-size: 0.98rem;
-  color: var(--kumkum-deep);
+  color: var(--gold-bright);
   font-weight: 600;
   line-height: 1.6;
   max-width: 440px;
@@ -2059,9 +2089,9 @@ body.invitation-opened .studio-pill {
   font-family: var(--font-serif-heading);
   font-size: 0.85rem;
   letter-spacing: 0.18em;
-  color: var(--lotus-pink-deep);
-  background: rgba(200, 50, 106, 0.1);
-  border: 1px solid rgba(200, 50, 106, 0.3);
+  color: var(--gold-bright);
+  background: rgba(212, 175, 55, 0.12);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   padding: 5px 14px;
   border-radius: 9999px;
   font-weight: 700;
@@ -2074,9 +2104,67 @@ body.invitation-opened .studio-pill {
   font-style: italic;
 }
 
+/* NIVASHAADI INSTAGRAM LINK */
+.footer-instagram-wrap {
+  margin: 14px auto 10px;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.8s ease 0.45s, transform 0.8s ease 0.45s;
+}
+
+.revealed .footer-instagram-wrap {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer-instagram-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold-bright);
+  font-family: var(--font-serif-heading);
+  font-size: 0.84rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 7px 18px;
+  border-radius: 9999px;
+  background: rgba(4, 24, 18, 0.65);
+  border: 1px solid rgba(212, 175, 55, 0.38);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35), inset 0 0 10px rgba(212, 175, 55, 0.1);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: pointer;
+}
+
+.footer-instagram-link:hover {
+  color: #f9f4ea;
+  border-color: var(--gold-primary);
+  background: rgba(212, 175, 55, 0.22);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(212, 175, 55, 0.35);
+}
+
+.footer-instagram-link .instagram-icon {
+  stroke: var(--gold-primary);
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.footer-instagram-link:hover .instagram-icon {
+  transform: scale(1.12);
+  stroke: var(--gold-bright);
+}
+
+.footer-instagram-link .instagram-handle {
+  display: inline-block;
+  line-height: 1;
+}
+
 /* ==========================================================================
    STANDARD SCROLL REVEAL (FADE + UPWARD MOVEMENT)
-   ========================================================================== */
+   ========================================================================= */
 .reveal-on-scroll {
   opacity: 0;
   transform: translateY(24px);
@@ -2109,12 +2197,14 @@ body.invitation-opened .studio-pill {
   bottom: 28px;
   left: 50%;
   transform: translateX(-50%) translateY(30px);
-  background: rgba(255, 252, 245, 0.98);
+  background: rgba(6, 34, 26, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   border: 1.5px solid var(--gold-primary);
-  color: var(--kumkum-deep);
+  color: var(--gold-bright);
   padding: 12px 24px;
   border-radius: 9999px;
-  box-shadow: 0 8px 30px rgba(65, 30, 15, 0.18), 0 0 18px rgba(212, 175, 55, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 18px rgba(212, 175, 55, 0.3);
   font-family: var(--font-serif-heading);
   font-size: 0.78rem;
   letter-spacing: 0.1em;
@@ -2169,18 +2259,18 @@ body.invitation-opened .studio-pill {
   }
 
   .hero-ganapathi-wrapper {
-    width: 92px;
-    height: 92px;
-    margin-bottom: 2px;
+    width: 112px;
+    height: 112px;
+    margin-bottom: 4px;
   }
 
   .hero-ganapathi-img {
-    max-height: 88px;
+    max-height: 106px;
   }
 
   .hero-shloka {
     font-size: 0.84rem;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.08em;
     margin-bottom: 4px;
   }
 
@@ -2217,10 +2307,10 @@ body.invitation-opened .studio-pill {
 }
 
 /* ==========================================================================
-   SACRED AUSPICIOUS ANIMATIONS & KEYFRAMES
+   SUBTLE & ELEGANT ENTRANCE & SCROLL ANIMATIONS
    ========================================================================== */
 
-/* 1. Divine Ganapathi Floating Levitation */
+/* 1. Divine Floating Levitation */
 @keyframes divineGanapathiFloat {
   0%, 100% {
     transform: translateY(0);
@@ -2230,53 +2320,98 @@ body.invitation-opened .studio-pill {
   }
 }
 
-/* 2. Royal Golden Breathing Glow on Sacred Names */
-@keyframes nameGoldGlow {
-  0%, 100% {
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8), 0 0 14px rgba(212, 175, 55, 0.25);
+/* 2. Soft Fade In */
+@keyframes fadeInSoft {
+  0% {
+    opacity: 0;
+    transform: translateY(6px);
   }
-  50% {
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.95), 0 0 28px rgba(212, 175, 55, 0.65), 0 0 42px rgba(255, 215, 0, 0.4);
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-/* 3. Sacred Ampersand Heartbeat Pulse */
+/* 3. Smooth Fade Up for Names & Headings */
+@keyframes fadeInUpSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 4. Royal Golden Breathing Glow on Sacred Names */
+@keyframes nameGoldGlow {
+  0%, 100% {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8), 0 0 16px rgba(212, 175, 55, 0.35);
+    transform: translateY(0);
+  }
+  50% {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.95), 0 0 30px rgba(212, 175, 55, 0.75), 0 0 45px rgba(223, 179, 80, 0.55), 0 0 65px rgba(212, 175, 55, 0.35);
+    transform: translateY(-2px);
+  }
+}
+
+/* 4b. Sequential Golden Gleam Wave across Letters */
+@keyframes letterGleam {
+  0%, 65%, 100% {
+    color: #f9f4ea;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8), 0 0 14px rgba(212, 175, 55, 0.35);
+    transform: translateY(0) scale(1);
+  }
+  14% {
+    color: #ffffff;
+    text-shadow: 0 0 18px rgba(255, 255, 255, 0.95), 0 0 32px rgba(212, 175, 55, 0.9), 0 0 48px rgba(223, 179, 80, 0.7);
+    transform: translateY(-4px) scale(1.06);
+  }
+  28% {
+    color: #f9f4ea;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8), 0 0 18px rgba(212, 175, 55, 0.5);
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* 5. Ampersand Heartbeat Pulse */
 @keyframes ampHeartbeat {
   0%, 100% {
     transform: scale(1);
-    text-shadow: 0 0 10px rgba(200, 50, 106, 0.35);
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.45);
   }
   50% {
-    transform: scale(1.12);
-    text-shadow: 0 0 18px rgba(232, 78, 135, 0.75), 0 0 28px rgba(212, 175, 55, 0.5);
+    transform: scale(1.1);
+    text-shadow: 0 0 18px rgba(223, 179, 80, 0.7), 0 0 28px rgba(212, 175, 55, 0.5);
   }
 }
 
-/* 4. Auspicious Diamond Knot Sparkle */
+/* 6. Auspicious Diamond Knot Sparkle */
 @keyframes diamondSparkle {
   0%, 100% {
     transform: rotate(45deg) scale(1);
     box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
   }
   50% {
-    transform: rotate(45deg) scale(1.3);
-    box-shadow: 0 0 16px rgba(255, 215, 0, 0.9), 0 0 26px rgba(212, 175, 55, 0.6);
+    transform: rotate(45deg) scale(1.25);
+    box-shadow: 0 0 16px rgba(223, 179, 80, 0.75), 0 0 24px rgba(212, 175, 55, 0.5);
   }
 }
 
-/* 5. Open Invitation Button Pulse */
+/* 7. Open Invitation Button Pulse */
 @keyframes btnAuspiciousPulse {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 8px 25px rgba(80, 40, 10, 0.25), 0 0 24px rgba(212, 175, 55, 0.35);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 24px rgba(212, 175, 55, 0.35);
   }
   50% {
     transform: scale(1.025);
-    box-shadow: 0 12px 32px rgba(80, 40, 10, 0.35), 0 0 38px rgba(245, 200, 66, 0.65), 0 0 55px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.55), 0 0 35px rgba(223, 179, 80, 0.55), 0 0 50px rgba(212, 175, 55, 0.25);
   }
 }
 
-/* 6. Rotating Star Seal */
+/* 8. Rotating Star Seal */
 @keyframes starRotateSlow {
   from {
     transform: rotate(0deg);
@@ -2286,26 +2421,111 @@ body.invitation-opened .studio-pill {
   }
 }
 
-/* 7. Couple Photo Frame Breathing Aura */
+/* 9. Couple Photo Frame Breathing Aura */
 @keyframes frameAuraBreath {
   0%, 100% {
-    box-shadow: 0 14px 40px rgba(65, 30, 15, 0.18), 0 0 24px rgba(212, 175, 55, 0.25);
+    box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4), 0 0 24px rgba(212, 175, 55, 0.25);
     border-color: var(--gold-primary);
   }
   50% {
-    box-shadow: 0 18px 48px rgba(65, 30, 15, 0.24), 0 0 36px rgba(245, 200, 66, 0.45);
-    border-color: rgba(235, 190, 80, 0.85);
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.5), 0 0 34px rgba(223, 179, 80, 0.38);
+    border-color: rgba(223, 179, 80, 0.85);
   }
 }
 
-/* 8. Timing Badge Pulse for Sacred Muhurtham */
+/* 10. Timing Badge Pulse for Sacred Celebration */
 @keyframes timingBadgeGlow {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 2px 8px rgba(200, 50, 106, 0.2);
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
   }
   50% {
-    transform: scale(1.06);
-    box-shadow: 0 4px 14px rgba(200, 50, 106, 0.45), 0 0 14px rgba(212, 175, 55, 0.35);
+    transform: scale(1.05);
+    box-shadow: 0 4px 14px rgba(212, 175, 55, 0.4), 0 0 14px rgba(223, 179, 80, 0.3);
+  }
+}
+
+/* 11. Subtle Choreographed Text Reveal within Scroll-Revealed Sections */
+.sub-eyebrow,
+.hero-eyebrow {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s, transform 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+}
+
+.sub-title,
+.plaque-bride-name,
+.plaque-groom-name,
+.wishes-names,
+.closing-names {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.18s, transform 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.18s;
+}
+
+.countdown-subtitle,
+.venue-address,
+.plaque-ceremony-verse,
+.wishes-subtitle,
+.travel-notes-list,
+.closing-mantra,
+.closing-footer-note {
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.75s ease 0.28s, transform 0.75s ease 0.28s;
+}
+
+.revealed .sub-eyebrow,
+.revealed .hero-eyebrow,
+.revealed .sub-title,
+.revealed .plaque-bride-name,
+.revealed .plaque-groom-name,
+.revealed .wishes-names,
+.revealed .closing-names,
+.revealed .countdown-subtitle,
+.revealed .venue-address,
+.revealed .plaque-ceremony-verse,
+.revealed .wishes-subtitle,
+.revealed .travel-notes-list,
+.revealed .closing-mantra,
+.revealed .closing-footer-note {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Accessibility: Respect Reduced Motion Preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-on-scroll,
+  .anim-letter,
+  .hero-ganapathi-wrapper,
+  .hero-shloka,
+  .hero-datetime-block,
+  .hero-invitation-quote,
+  .sub-eyebrow,
+  .hero-eyebrow,
+  .sub-title,
+  .plaque-bride-name,
+  .plaque-groom-name,
+  .wishes-names,
+  .closing-names,
+  .countdown-subtitle,
+  .venue-address,
+  .plaque-ceremony-verse,
+  .wishes-subtitle,
+  .travel-notes-list,
+  .closing-mantra,
+  .closing-footer-note,
+  .footer-instagram-wrap {
+    opacity: 1 !important;
+    transform: none !important;
+    filter: none !important;
   }
 }

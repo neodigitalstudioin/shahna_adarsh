@@ -1,7 +1,7 @@
 /**
- * Arun Raj GR & Reshma S - Master Wedding Invitation Engine
+ * Shahna & Adarsh - Master Wedding Invitation Engine
  * Handles Cinematic Letter-by-Letter Text Animations,
- * Vertical Groom & Bride Storytelling Motion, Petals Canvas,
+ * Storytelling Motion, Royal Gold & Emerald Canvas Particles,
  * Audio Controller, Countdown, RSVP, Sharing, and Scroll Reveals.
  */
 
@@ -237,26 +237,24 @@
     const particles = [];
 
     const petalColors = [
-      // 1. Rich Pinks
-      { r: 232, g: 78, b: 135, isPetal: true },  // Lotus Pink
-      { r: 205, g: 45, b: 108, isPetal: true },  // Deep Pink
-      { r: 248, g: 140, b: 180, isPetal: true }, // Light Blossom Pink
-
-      // 2. Auspicious Reds
-      { r: 195, g: 20, b: 42, isPetal: true },   // Kumkum Red
-      { r: 165, g: 12, b: 32, isPetal: true },   // Crimson Red
-      { r: 215, g: 32, b: 58, isPetal: true },   // Festival Red
-
-      // 3. Warm Browns
-      { r: 135, g: 70, b: 38, isPetal: true },   // Teak Brown
-      { r: 162, g: 88, b: 50, isPetal: true },   // Terracotta Brown
-      { r: 105, g: 52, b: 26, isPetal: true }    // Deep Sandalwood Brown
+      // Rich Real Metallic Gold Tones (Sophisticated warm gold, no lemon yellow)
+      { r: 212, g: 175, b: 55, isGold: true },    // Metallic Pure Gold (#d4af37)
+      { r: 201, g: 155, b: 45, isGold: true },    // Antique Royal Gold (#c99b2d)
+      { r: 226, g: 195, b: 114, isGold: true },   // Soft Champagne Gold (#e2c372)
+      { r: 184, g: 134, b: 28, isGold: true },    // Rich Metallic Bronze Gold (#b8861c)
+      { r: 218, g: 178, b: 78, isGold: true },    // Warm Lustrous Gold
+      // Elegant Islamic Emerald & Forest Green Tones
+      { r: 16, g: 94, b: 68, isGreen: true },     // Deep Emerald Green (#105e44)
+      { r: 10, g: 68, b: 50, isGreen: true },     // Forest Green (#0a4432)
+      { r: 24, g: 118, b: 86, isGreen: true },    // Royal Jade Green (#187656)
+      { r: 35, g: 142, b: 105, isGreen: true },   // Subtle Emerald Green Glimmer (#238e69)
+      { r: 8, g: 54, b: 40, isGreen: true }       // Dark Pine Green
     ];
 
     // Ambient Auspicious Floating Petals & Golden Light Motes (Subtle, calm blessings)
     const AMBIENT_COUNT = 8;
     function createAmbientParticle(initialSpread = false) {
-      const isGold = Math.random() < 0.32;
+      const isGold = Math.random() < 0.38;
       const color = petalColors[Math.floor(Math.random() * petalColors.length)];
       return {
         x: Math.random() * (width + 60) - 30,
@@ -355,14 +353,16 @@
       ctx.rotate((p.rotation * Math.PI) / 180);
 
       if (p.isGold) {
-        const pulse = Math.sin(p.flutterAngle * 2.5) * 0.25 + 0.75;
+        // Metallic gold particle with warm soft metallic glow
+        const pulse = Math.sin(p.flutterAngle * 2.2) * 0.2 + 0.8;
         ctx.beginPath();
         ctx.arc(0, 0, p.size * pulse, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(245, 197, 66, ${p.alpha * pulse * 0.9})`;
-        ctx.shadowColor = 'rgba(255, 215, 0, 0.75)';
-        ctx.shadowBlur = 6;
+        ctx.fillStyle = `rgba(212, 175, 55, ${p.alpha * pulse * 0.85})`;
+        ctx.shadowColor = 'rgba(212, 175, 55, 0.45)';
+        ctx.shadowBlur = 5;
         ctx.fill();
       } else {
+        // Elegant teardrop petal fluttering in 3D
         const scaleX = Math.cos(p.flutterAngle * p.wobbleSpeed);
         const scaleY = Math.sin(p.flutterAngle * 1.3) * 0.25 + 0.75;
         ctx.scale(scaleX, scaleY);
@@ -371,7 +371,7 @@
         ctx.moveTo(0, -p.size);
         ctx.bezierCurveTo(p.size * 0.9, -p.size * 0.6, p.size * 0.8, p.size * 0.8, 0, p.size);
         ctx.bezierCurveTo(-p.size * 0.8, p.size * 0.8, -p.size * 0.9, -p.size * 0.6, 0, -p.size);
-        ctx.fillStyle = `rgba(${p.color.r}, ${p.color.g}, ${p.color.b}, ${p.alpha * 0.92})`;
+        ctx.fillStyle = `rgba(${p.color.r}, ${p.color.g}, ${p.color.b}, ${p.alpha * 0.88})`;
         ctx.fill();
       }
 
@@ -428,7 +428,7 @@
   function initCountdown(targetIso) {
     if (countdownTimerId) clearInterval(countdownTimerId);
 
-    const targetDate = new Date(targetIso || '2026-10-31T11:48:00+05:30').getTime();
+    const targetDate = new Date(targetIso || '2026-11-12T16:00:00+05:30').getTime();
 
     const dEl = document.getElementById('countDays');
     const hEl = document.getElementById('countHours');
@@ -511,10 +511,10 @@
           successBox.style.display = 'block';
           if (selectedRsvpStatus === 'accepted') {
             successTitle.innerText = 'BLESSINGS RECEIVED WITH JOY!';
-            successText.innerText = `Thank you, ${guestName}! We are overjoyed to celebrate our union with you at Karthika Auditorium, Attukal, Thiruvananthapuram.`;
+            successText.innerText = `Thank you, ${guestName}! We are overjoyed to celebrate our wedding reception with you at Sree Balakrishna Kalyana Mandapam, Thirumala, Thiruvananthapuram.`;
           } else {
             successTitle.innerText = 'GRATEFUL FOR YOUR BLESSINGS';
-            successText.innerText = `Thank you, ${guestName}! We sincerely appreciate your warm wishes and blessings.`;
+            successText.innerText = `Thank you, ${guestName}! We sincerely appreciate your warm wishes and prayers.`;
           }
         }
         showToast('RSVP sent successfully!');
@@ -528,19 +528,20 @@
     const btnCalendar = document.getElementById('btnShareCalendar');
     const btnCopyLink = document.getElementById('btnShareCopyLink');
 
-    const coupleName = 'Arun Raj GR & Reshma S';
-    const dateText = 'Saturday, October 31, 2026';
-    const hashtag = '#ArunWedsReshma';
+    const coupleName = 'Shahna & Adarsh';
+    const dateText = 'Thursday, November 12, 2026';
+    const hashtag = '#ShahnaWedsAdarsh';
     const pageUrl = window.location.href;
 
     if (btnWhatsapp) {
       const msg = encodeURIComponent(
-        `🌸 Sacred Wedding Invitation 🌸\n\n` +
-        `Together with our families, we joyfully invite you to celebrate the marriage of ${coupleName}.\n\n` +
+        `🌙 Wedding Reception Invitation 🌙\n\n` +
+        `Together with our families, we joyfully invite you to celebrate the wedding reception of ${coupleName}.\n\n` +
         `📅 Date: ${dateText}\n` +
-        `⏰ Muhurtham: 11:48 AM – 12:12 PM\n` +
-        `📍 Venue: Karthika Auditorium, Attukal, Thiruvananthapuram\n\n` +
-        `View the sacred digital wedding invitation:\n${pageUrl}\n\n` +
+        `🌙 Hijri: 1448 Rabi' al-Akhir 2\n` +
+        `⏰ Time: 4:00 PM – 8:30 PM\n` +
+        `📍 Venue: Sree Balakrishna Kalyana Mandapam, near Thirumala Junction, Thiruvananthapuram\n\n` +
+        `View the digital wedding invitation:\n${pageUrl}\n\n` +
         `${hashtag}`
       );
       btnWhatsapp.href = `https://api.whatsapp.com/send?text=${msg}`;
@@ -548,10 +549,10 @@
 
     if (btnCalendar) {
       btnCalendar.addEventListener('click', () => {
-        const title = encodeURIComponent(`Wedding Ceremony of ${coupleName}`);
-        const details = encodeURIComponent(`Sacred Wedding Ceremony & Muhurtham of ${coupleName} at Karthika Auditorium, Attukal, Thiruvananthapuram.`);
-        const location = encodeURIComponent(`Karthika Auditorium, Attukal, Manacaud P.O., Thiruvananthapuram, Kerala 695009`);
-        const dates = `20261031T061800Z/20261031T083000Z`;
+        const title = encodeURIComponent(`Wedding Reception of ${coupleName}`);
+        const details = encodeURIComponent(`Wedding Reception of ${coupleName} at Sree Balakrishna Kalyana Mandapam, near Thirumala Junction, Thiruvananthapuram.`);
+        const location = encodeURIComponent(`Sree Balakrishna Kalyana Mandapam, near Thirumala Junction, Thiruvananthapuram, Kerala`);
+        const dates = `20261112T103000Z/20261112T150000Z`;
 
         const googleCalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${title}&dates=${dates}&details=${details}&location=${location}`;
         window.open(googleCalUrl, '_blank');
@@ -602,7 +603,7 @@
     const coverScreen = document.getElementById('coverScreen');
 
     initPetalsCanvas();
-    initCountdown('2026-10-31T11:48:00+05:30');
+    initCountdown('2026-11-12T16:00:00+05:30');
     initRsvpSection();
     initShareButtons();
     initScrollReveal();
